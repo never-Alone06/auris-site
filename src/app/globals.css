@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* ============================================
+   DESIGN SYSTEM AURIS — Tailwind v4
+   ============================================ */
+@theme {
+  /* Palette de couleurs AURIS */
+  --color-auris-navy: #0A1929;
+  --color-auris-blue: #1E3A5F;
+  --color-auris-cyan: #38BDF8;
+  --color-auris-sky: #7DD3FC;
+  --color-auris-light: #F8FAFC;
+  --color-auris-gray: #64748B;
+
+  /* Typographie */
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* ============================================
+   STYLES GLOBAUX
+   ============================================ */
+html {
+  scroll-behavior: smooth; /* défilement doux pour les ancres (#) */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: var(--color-auris-navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sélection de texte dans les couleurs AURIS */
+::selection {
+  background-color: var(--color-auris-cyan);
+  color: white;
+}
+
+/* Animation fade-in simple pour les sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
