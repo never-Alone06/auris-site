@@ -3,10 +3,15 @@
 // ============================================
 
 const CONTACTS = {
-  emails: ["nehemielambda@gmail.com", "kamgafranck301@gmail.com"],
+  emails: [
+    "nehemielambda@gmail.com",
+    "kamgafranck301@gmail.com",
+    "keudjionely@gmail.com"
+  ],
   whatsapps: [
     { display: "+237 657 517 940", link: "237657517940" },
     { display: "+237 657 055 208", link: "237657055208" },
+    { display: "+237 673 518 978", link: "237673518978" },
   ],
   location: "Douala, Cameroun",
   school: "ENSPD — École Nationale Supérieure Polytechnique de Douala",
@@ -92,13 +97,13 @@ export const team = {
     {
       name: "Keudjio Nawa Nely",
       initials: "KN",
-      photo: "/nely.jpeg",
+      photo: "/nely.jpeg", // Extension .jpeg rétablie
       role: "Cofondatrice",
       focus: "Tests, Validation & Marketing",
       school: "ENSPD Douala — Génie Logiciel, Niveau 4",
       bio: "Responsable des tests utilisateurs, de la validation du prototype et de la stratégie marketing.",
-      email: "keudjionely@gmail.com",
-      whatsapp: "237673518978",
+      email: CONTACTS.emails[2],
+      whatsapp: CONTACTS.whatsapps[2].link,
     },
   ],
 };
