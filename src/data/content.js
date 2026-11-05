@@ -57,12 +57,15 @@ export const soundClasses = [
   { id: "autres", label: "Autres sons", description: "Bruits non dangereux", vibration: "Aucune (par défaut)", color: "slate" },
 ];
 
+// ============================================
+// ÉQUIPE (3 membres)
+// ============================================
 export const team = {
   title: "Une équipe jeune, déterminée et pluridisciplinaire",
   intro:
-    "Deux étudiants de l'ENSPD Douala, animés par une conviction : la technologie peut et doit servir les plus vulnérables.",
+    "Trois étudiants de l'ENSPD Douala, animés par une conviction : la technologie peut et doit servir les plus vulnérables.",
   photo: "/innovateurs.jpg",
-  photoCaption: "Boris & Franck — ENSPD Douala",
+  photoCaption: "L'équipe AURIS — ENSPD Douala",
   members: [
     {
       name: "Nguimbous Nehemie Boris",
@@ -70,7 +73,7 @@ export const team = {
       photo: "/boris.jpg",
       role: "Cofondateur",
       focus: "Électronique & IA embarquée",
-      school: "ENSPD Douala — Niveau 3",
+      school: "ENSPD Douala — Génie Mécatronique, Niveau 3",
       bio: "Conception matérielle du bracelet, intégration du modèle IA sur ESP32-S3, tests de performance.",
       email: CONTACTS.emails[0],
       whatsapp: CONTACTS.whatsapps[0].link,
@@ -81,10 +84,21 @@ export const team = {
       photo: "/franck.jpg",
       role: "Cofondateur",
       focus: "Firmware & Intégration système",
-      school: "ENSPD Douala — Niveau 3",
+      school: "ENSPD Douala — Génie Mécatronique, Niveau 3",
       bio: "Développement du code embarqué, gestion du pipeline audio I2S, communication Bluetooth BLE.",
       email: CONTACTS.emails[1],
       whatsapp: CONTACTS.whatsapps[1].link,
+    },
+    {
+      name: "Keudjio Nawa Nely",
+      initials: "KN",
+      photo: "/nely.jpeg",
+      role: "Cofondatrice",
+      focus: "Tests, Validation & Marketing",
+      school: "ENSPD Douala — Génie Logiciel, Niveau 4",
+      bio: "Responsable des tests utilisateurs, de la validation du prototype et de la stratégie marketing.",
+      email: "keudjionely@gmail.com",
+      whatsapp: "237673518978",
     },
   ],
 };

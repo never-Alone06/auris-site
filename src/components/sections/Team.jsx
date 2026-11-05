@@ -17,12 +17,12 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Photo des deux innovateurs */}
+        {/* Photo des innovateurs */}
         <div className="mb-14 max-w-3xl">
           <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg group">
             <img
               src={team.photo}
-              alt="Les deux innovateurs du projet AURIS"
+              alt="L'équipe du projet AURIS"
               className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-auris-navy/90 to-transparent p-6">
@@ -33,14 +33,14 @@ export default function Team() {
           </div>
         </div>
 
-        {/* Grille des 2 membres */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+        {/* Grille des 3 membres */}
+        <div className="grid md:grid-cols-3 gap-6">
           {team.members.map((member, i) => (
             <div
               key={i}
               className="group bg-auris-light rounded-2xl p-6 md:p-8 border border-slate-200 hover:border-auris-cyan hover:shadow-xl hover:shadow-auris-cyan/10 transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Avatar avec photo */}
+              {/* Avatar */}
               <div className="w-20 h-20 rounded-full bg-gradient-to-br from-auris-cyan to-auris-blue flex items-center justify-center mb-5 shadow-lg overflow-hidden group-hover:scale-110 transition-transform">
                 <img
                   src={member.photo}
